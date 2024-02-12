@@ -1,0 +1,98 @@
+body{
+  height: 100vh;
+  text-align: center;
+  background-image:linear-gradient(to top right,rgba(0,0,0,1),rgba(0,0,0,0)) ,url(https://wallpapercave.com/wp/wp12859524.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header{
+  font-family: "Raleway",sans-serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: black; 
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  border-radius: 1rem;
+  border: black solid 5px;
+  background-color: blanchedalmond;
+  background-image:linear-gradient(to top right,rgb(200, 22, 22),rgba(161, 222, 20, 0));
+  font-family: cursive;
+}
+.timeAdjust{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap: 4rem;
+}
+.dispalyBoard{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.lengthDisplay{
+  border-radius: 1rem;
+  border: solid 5px;
+  background-color: blanchedalmond;
+  background-image:linear-gradient(to top right,rgb(200, 22, 22),rgba(161, 222, 20, 0));
+  font-family: cursive;
+}
+.timeDisplay{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width: 32rem;
+  height: 12rem;
+  flex-direction: column;
+  border-radius: 1rem;
+  border: solid 5px;
+  background-color: blanchedalmond;
+  background-image:linear-gradient(to top right,rgb(200, 22, 22),rgba(161, 222, 20, 0));
+}
+.timeDisplay label{
+  font-family: cursive;
+}
+.button{
+  cursor: pointer;
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.5);
+  background-image:linear-gradient(to top right,rgb(10, 215, 31),rgba(14, 232, 239, 0));
+  border-radius: 0.4rem;
+  border-color: rgb(10, 215, 31);
+}
+.button:hover{
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 600px){
+  body{
+    background-position: 48% 50%;
+  }
+  .header{
+    font-size: 15px;
+    letter-spacing: 1px;
+    height: 2rem;
+    width: 100%;
+    border: black 2px solid;
+    border-radius: 0.5rem;
+  }
+  .lengthDisplay{
+    border: black 2px solid;
+  }
+  .timeAdjust{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .timeDisplay{
+    width: 17.5rem;
+    height: 9rem;
+    border: black 2px solid;
+  }
+}
